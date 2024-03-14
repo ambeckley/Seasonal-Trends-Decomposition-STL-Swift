@@ -13,13 +13,13 @@ let Array = [
 7.0, 8.0, 8.0, 0.0, 2.0, 5.0, 0.0, 5.0, 6.0, 7.0,
 3.0, 6.0, 1.0, 4.0, 4.0, 4.0, 3.0, 7.0, 5.0, 8.0
         ]
-        
-        let period = 7; // period of the seasonal component
-        do {
-            let res = try StlParams().fit(series: Array, period: user_size_t(period))
-        } catch {
-            print("Could not resolve")
-        }
+
+let period = 7; // period of the seasonal component
+do {
+        let res = try StlParams().fit(series: Array, period: user_size_t(period))
+} catch {
+        print("Could not resolve")
+}
 ```
 
 Get the components
